@@ -1,0 +1,16 @@
+{
+    "name": "SVGMapper",
+    "source": [
+        "jquery.js",
+        "stylerController.js",
+        "SVGMapper.js",
+        "widget.js"
+    ],
+    "style": [
+        "widget.css"
+    ],
+    "folderName": "SVGMapper",
+    "lastUpdate": "2020-01-27T17:07:17.636Z",
+    "isEnabled": true,
+    "version": "1.0.0"
+}

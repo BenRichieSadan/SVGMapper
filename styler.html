@@ -1,0 +1,55 @@
+<div data-ng-controller="plugin-SVGMapper.controllers.stylerController">
+
+    <div class="settings-pane-host">
+        <div class="pane-row">
+            <div class="checker-pane-holder">
+                <div class="ew-p-header" contextmenu="SVG file path: '/plugins/SVGMapper/SVGMaps/' +">SVG file path:
+                    "/plugins/SVGMapper/SVGMaps/" +</div>
+            </div>
+            <div>
+                <input type="text" id="pathValue" id="pathValue" placeholder="File Name"
+                    value="{{model.FilePath}}"></input>
+            </div>
+            <div>
+                <button class="btn" data-ng-click="FilePath()"> Update </button>
+            </div>
+            <div class="checker-pane-holder">
+                <div class="ew-p-header" contextmenu="Tooltip">Tooltip:</div>
+            </div>
+            <div class="cbox-pane-row selected"
+                data-ng-click="ShowTooltipTick()" data-ng-class="{selected: model.Tooltip.ShowTooltip}">
+                <div class="custom-cbox-btn" data-ng-class="{selected: model.Tooltip.ShowTooltip}"></div>
+                <div class="pane-separator"></div>
+                <div class="pane-caption">Show Tooltip</div>
+            </div>
+            <div class="cbox-pane-row selected"
+                data-ng-click="ShowClassNameTick()" data-ng-class="{selected: model.Tooltip.ShowClass}">
+                <div class="custom-cbox-btn" data-ng-class="{selected: model.Tooltip.ShowClass}"></div>
+                <div class="pane-separator"></div>
+                <div class="pane-caption">Show Class Name</div>
+            </div>
+            <div class="cbox-pane-row selected"
+                data-ng-click="ShowIdTick()" data-ng-class="{selected: model.Tooltip.ShowId}">
+                <div class="custom-cbox-btn" data-ng-class="{selected: model.Tooltip.ShowId}"></div>
+                <div class="pane-separator"></div>
+                <div class="pane-caption">Show ID</div>
+            </div>
+        </div>
+        <div class="pane-row">
+            <div class="checker-pane-holder">
+                <div class="ew-p-header" contextmenu="Layers Definitions">Layers Definitions:</div>
+            </div>
+            <div id="layersDefinitionsList">
+
+            </div>
+            <div>
+                <button id="loadLayersBtn" class="btn" data-ng-click="LoadLayersDefinitions()"> Load Layers Definitions
+                </button>
+            </div>
+            <div>
+                <button id="saveLayersBtn" class="btn" disabled="true" data-ng-click="SaveLayersDefinitions()"> Save
+                    Layers Definitions </button>
+            </div>
+        </div>
+    </div>
+</div>
